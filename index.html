@@ -1,1 +1,24 @@
 
+<html>
+<body>
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+navigator.bluetooth.requestDevice({
+  acceptAllDevices: true,
+  optionalServices: ['battery_service']
+})
+.then(device => { /* ... */ })
+.catch(error => { console.log(error); });
+}
+ 
+</script>
+
+</body>
+</html>
