@@ -13,10 +13,9 @@
 document.getElementById("button").addEventListener('click', function(event) {
   console.log(event);
   navigator.bluetooth.requestDevice({
-  acceptAllDevices: true,
-  optionalServices: ['battery_service']
+  acceptAllDevices: true
 })
-.then(device => { /* ... */ })
+.then(device => { console.log(device)})
 .catch(error => { console.log(error); });
 });
 </script>
