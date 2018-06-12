@@ -1,21 +1,18 @@
- <!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/mvc">
 <head>
-  <meta charset="utf-8">
-
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+    <meta charset="UTF-8"/>
+    <title>Ovipae | Home</title>
 </head>
-
 <body>
-  <h1> Hello there!</h1>
+<h1>Home</h1>
+<button id="myButton" class="float-left submit-button" >Read Qr</button>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam blanditiis dicta dolores eveniet expedita illum maiores mollitia nemo non nulla omnis quod quos recusandae suscipit tempore totam velit, vitae!</p>
+<img src="http://placehold.it/300x300/5fcf80/ffffff" alt="logo"/>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "http://localhost:8080/qrcodereader";
+    };
+</script>
 </body>
 </html>
